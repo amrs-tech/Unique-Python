@@ -22,6 +22,7 @@ try:
 
     except:
         print('Server Error !')
+    #Change the path for the file in your machine
     path = 'C:\\Users\\Sabi\\Downloads\\m\\pic_dtop\\'+day+'.jpg'
     file = u.urlretrieve(url,path)
     ctypes.windll.user32.SystemParametersInfoW(20, 0, path , 0)
